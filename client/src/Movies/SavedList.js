@@ -5,19 +5,23 @@ function SavedList({ list }) {
   return (
     <div className="saved-list">
       <h3>Saved Movies:</h3>
-      {list.map(movie => {
+      {list.map((movie, i) => {
         return (
           <NavLink
             to={`/movies/${movie.id}`}
-            key={movie.id}
+            key={i}
             activeClassName="saved-active"
           >
-            <span className="saved-movie">{movie.title}</span>
+            <span key={i} className="saved-movie">{movie.title}</span>
           </NavLink>
         );
       })}
       <div className="home-button">
         <Link to="/">Home</Link>
+       
+      </div>
+      <div className="add-movie">
+      <Link to="/add-movie">Add Movie</Link>
       </div>
     </div>
   );

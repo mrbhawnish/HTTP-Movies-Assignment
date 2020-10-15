@@ -66,8 +66,55 @@ body {
   color: white;
 }
 
+.update-button {
+  position: absolute;
+  top: 25px;
+  right: 100px;
+  border: 1px solid grey;
+  padding: 5px 10px;
+  background-color: lightseagreen;
+}
+.update-button:hover {
+  background-color: green;
+  color: white;
+  cursor: pointer;
+}
+.delete-button {
+  position: absolute;
+  top: 90px;
+  right: 100px;
+  border: 1px solid grey;
+  padding: 5px 10px;
+  background-color: lightseagreen;
+}
+.delete-button:hover {
+  background-color: green;
+  color: white;
+  cursor: pointer;
+}
+
+.add-button {
+  position: absolute;
+  top: 90px;
+  right: 25px;
+  border: 1px solid grey;
+  padding: 5px 10px;
+  background-color: lightseagreen;
+}
+.add-button:hover {
+  background-color: green;
+  color: white;
+  cursor: pointer;
+}
+
 .home-button {
   padding: 5px 10px;
+  background-color: lightskyblue;
+}
+
+.add-movie {
+  padding: 5px 10px;
+  margin-left: 5px;
   background-color: lightskyblue;
 }
 
